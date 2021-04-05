@@ -1,0 +1,141 @@
+
+.theme-default {
+    --hover-color: var(--pink);
+    --hover-color-light: rgba(146, 55, 77, 0.2);
+    --background-color-one: var(--black);
+    --background-color-two: var(--dark-grey);
+    --text-color: var(--white3);
+    --section-border-color: var(--light-white);
+    --input-bg-color: var(--dark-grey);
+    --input-text-color: var(--white3);
+    --input-desc-text-color: #9b9b9b;
+    --text-color-btn: var(--white3);
+    --update-color: var(--background-color-two);
+    --hover-color-dark: var(--pink);
+}
+
+/* --------------------------------------------- */
+/* -------- OVERALL CSS -------------------------*/
+/* --------------------------------------------- */
+* {
+    box-sizing: border-box;
+    transition: all ease-in-out 100ms;
+}
+
+html {
+    height: -webkit-fill-available;
+}
+
+body, html {
+    text-align: center;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    margin: 0;
+    padding: 0;
+    max-width: 100vw;
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
+    overflow-x: hidden;
+    background-color: var(--background-color-one);
+    color: var(--text-color);
+    font-family: var(--body-font);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+i {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Font awesome animation delay removed */
+.fas {
+    transition: all ease-in-out 0ms;
+}
+
+/* Font awesome animation delay removed */
+.fab {
+    transition: all ease-in-out 0ms;
+}
+
+/* Theme */
+.select-theme select {
+    width: auto;
+    padding: 0 35% 0 35%;
+    background-color: var(--background-color-two);
+}
+
+/* --------------------------------------------- */
+/* -------- BASE CSS --------------------------- */
+/* --------------------------------------------- */
+.container {
+    overflow: hidden;
+}
+
+.body-container {
+    max-width: 1550px;
+    width: 100vw;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+}
+
+/* --------------------------------------------- */
+/* -------- NAVIGATION ------------------------- */
+/* --------------------------------------------- */
+.navigation {
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+
+.navigation-container {
+    width: 90%;
+    margin: 2% auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.navigation-container ul {
+    width: 50%;
+    margin: 0;
+    margin-left: auto;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.navigation-container li {
+    margin: 0 2%;
+}
+
+/* --------------------------------------------- */
+/* ----------- CONTENT ------------------------- */
+/* --------------------------------------------- */
+
+.circle-shape {
+    position: fixed;
+    background-color: cadetblue;
+    width: calc(50vw + 50vh);
+    height: calc(50vw + 50vh);
+    border-radius: 50%;
+    transform: translate(-20vh, -22vw);
+}
